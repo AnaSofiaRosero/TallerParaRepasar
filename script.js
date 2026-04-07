@@ -89,7 +89,7 @@ function crearProducto(producto) {
   app.appendChild(card);
 }
 
-// 🔥 AQUÍ ESTÁ LO IMPORTANTE (JSON)
+
 fetch("catalogo.json")
   .then(res => res.json())
   .then(productos => {
