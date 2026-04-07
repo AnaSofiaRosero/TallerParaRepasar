@@ -1,192 +1,5 @@
-// ================= JSON DEL PROFE =================
-const productos = [
-  {
-    id: 1,
-    nombre: "Auriculares Bluetooth",
-    descripcion: "Auriculares inalámbricos con cancelación de ruido.",
-    precio: 75.99,
-    imagen: "https://picsum.photos/200/200?random=1",
-    reseñas: [
-      { usuario: "Ana Ruiz", texto: "¡Excelente calidad de sonido!", fecha: "2025-09-01" }
-    ]
-  },
-  {
-    id: 2,
-    nombre: "Reloj Inteligente",
-    descripcion: "Reloj con monitor de actividad física y notificaciones.",
-    precio: 120,
-    imagen: "https://picsum.photos/200/200?random=2",
-    reseñas: [
-      { usuario: "Carlos Pérez", texto: "Me encanta, super útil.", fecha: "2025-09-02" },
-      { usuario: "Sofía Gómez", texto: "Muy elegante.", fecha: "2025-09-03" }
-    ]
-  },
-  {
-    id: 3,
-    nombre: "Webcam HD",
-    descripcion: "Cámara web de alta definición para videollamadas.",
-    precio: 45.5,
-    imagen: "https://picsum.photos/200/200?random=3",
-    reseñas: []
-  },
-  {
-    id: 4,
-    nombre: "Mouse Gamer",
-    descripcion: "Mouse ergonómico con iluminación RGB.",
-    precio: 55,
-    imagen: "https://picsum.photos/200/200?random=4",
-    reseñas: [
-      { usuario: "Juan Cárdenas", texto: "Muy cómodo para largas sesiones.", fecha: "2025-09-04" }
-    ]
-  },
-  {
-    id: 5,
-    nombre: "Teclado Mecánico",
-    descripcion: "Teclado con switches de alta respuesta.",
-    precio: 99.99,
-    imagen: "https://picsum.photos/200/200?random=5",
-    reseñas: []
-  },
-  {
-    id: 6,
-    nombre: "Micrófono USB",
-    descripcion: "Micrófono profesional para streaming.",
-    precio: 85,
-    imagen: "https://picsum.photos/200/200?random=6",
-    reseñas: [
-      { usuario: "Luisa Botero", texto: "Excelente calidad de audio.", fecha: "2025-09-05" }
-    ]
-  },
-  {
-    id: 7,
-    nombre: "Monitor 4K",
-    descripcion: "Monitor de alta resolución Ultra HD.",
-    precio: 350,
-    imagen: "https://picsum.photos/200/200?random=7",
-    reseñas: []
-  },
-  {
-    id: 8,
-    nombre: "Impresora Multifuncional",
-    descripcion: "Imprime, escanea y copia.",
-    precio: 150,
-    imagen: "https://picsum.photos/200/200?random=8",
-    reseñas: [
-      { usuario: "Laura Pineda", texto: "Muy práctica y fácil de usar.", fecha: "2025-09-07" }
-    ]
-  },
-  {
-    id: 9,
-    nombre: "Disco Duro 1TB",
-    descripcion: "Almacenamiento portátil de alta velocidad.",
-    precio: 60,
-    imagen: "https://picsum.photos/200/200?random=9",
-    reseñas: [
-      { usuario: "Felipe Ospina", texto: "Perfecto para guardar archivos.", fecha: "2025-09-08" }
-    ]
-  },
-  {
-    id: 10,
-    nombre: "Router Wi-Fi",
-    descripcion: "Mejora la velocidad de tu conexión.",
-    precio: 110,
-    imagen: "https://picsum.photos/200/200?random=10",
-    reseñas: []
-  },
-  {
-    id: 11,
-    nombre: "Altavoz Inteligente",
-    descripcion: "Controla tu hogar con voz.",
-    precio: 70,
-    imagen: "https://picsum.photos/200/200?random=11",
-    reseñas: [
-      { usuario: "Ricardo Soto", texto: "Muy útil en casa.", fecha: "2025-09-10" }
-    ]
-  },
-  {
-    id: 12,
-    nombre: "Lámpara LED",
-    descripcion: "Luz ajustable para escritorio.",
-    precio: 30.5,
-    imagen: "https://picsum.photos/200/200?random=12",
-    reseñas: []
-  },
-  {
-    id: 13,
-    nombre: "Cargador Portátil",
-    descripcion: "Batería externa de 10000mAh.",
-    precio: 25,
-    imagen: "https://picsum.photos/200/200?random=13",
-    reseñas: []
-  },
-  {
-    id: 14,
-    nombre: "Cable HDMI",
-    descripcion: "Cable de alta velocidad 4K.",
-    precio: 15,
-    imagen: "https://picsum.photos/200/200?random=14",
-    reseñas: [
-      { usuario: "Diego Sánchez", texto: "Excelente calidad de imagen.", fecha: "2025-09-12" }
-    ]
-  },
-  {
-    id: 15,
-    nombre: "Tarjeta Gráfica",
-    descripcion: "Alto rendimiento para gaming.",
-    precio: 450,
-    imagen: "https://picsum.photos/200/200?random=15",
-    reseñas: []
-  },
-  {
-    id: 16,
-    nombre: "Hub USB-C",
-    descripcion: "Adaptador multipuerto.",
-    precio: 40,
-    imagen: "https://picsum.photos/200/200?random=16",
-    reseñas: []
-  },
-  {
-    id: 17,
-    nombre: "Funda Laptop",
-    descripcion: "Protección acolchada.",
-    precio: 20,
-    imagen: "https://picsum.photos/200/200?random=17",
-    reseñas: []
-  },
-  {
-    id: 18,
-    nombre: "Silla Ergonómica",
-    descripcion: "Comodidad para largas jornadas.",
-    precio: 180,
-    imagen: "https://picsum.photos/200/200?random=18",
-    reseñas: [
-      { usuario: "Elena Valdés", texto: "Muy cómoda.", fecha: "2025-09-15" }
-    ]
-  },
-  {
-    id: 19,
-    nombre: "Cámara Seguridad",
-    descripcion: "Vigilancia con visión nocturna.",
-    precio: 78,
-    imagen: "https://picsum.photos/200/200?random=19",
-    reseñas: []
-  },
-  {
-    id: 20,
-    nombre: "Antivirus",
-    descripcion: "Protección contra virus.",
-    precio: 49.99,
-    imagen: "https://picsum.photos/200/200?random=20",
-    reseñas: [
-      { usuario: "Gabriel Torres", texto: "Muy confiable.", fecha: "2025-09-16" }
-    ]
-  }
-];
-
-// ================= DOM =================
 const app = document.getElementById("app");
 
-// ================= FUNCIÓN =================
 function crearProducto(producto) {
 
   const card = document.createElement("div");
@@ -204,18 +17,16 @@ function crearProducto(producto) {
   const precio = document.createElement("p");
   precio.textContent = "$ " + (producto.precio * 4000).toLocaleString("es-CO");
 
-  // BOTÓN CARRITO
   const btn = document.createElement("button");
   btn.textContent = "Agregar al carrito";
   btn.className = "btn add-btn";
 
   btn.addEventListener("click", () => {
-    btn.textContent = "Agregado ✅";
+    btn.textContent = "Agregado";
     btn.style.background = "#22c55e";
     btn.disabled = true;
   });
 
-  // BOTÓN RESEÑAS
   const reviewBtn = document.createElement("button");
   reviewBtn.textContent = "Mostrar reseñas";
   reviewBtn.className = "btn review-btn";
@@ -249,7 +60,6 @@ function crearProducto(producto) {
 
       const texto = document.createElement("p");
       texto.textContent = r.texto;
-      texto.className = "review-text";
 
       caja.appendChild(fila);
       caja.appendChild(texto);
@@ -279,4 +89,9 @@ function crearProducto(producto) {
   app.appendChild(card);
 }
 
-productos.forEach(p => crearProducto(p));
+// 🔥 AQUÍ ESTÁ LO IMPORTANTE (JSON)
+fetch("catalogo.json")
+  .then(res => res.json())
+  .then(productos => {
+    productos.forEach(p => crearProducto(p));
+  });
